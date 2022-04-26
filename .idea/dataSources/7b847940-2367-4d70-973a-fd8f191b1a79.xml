@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="MySQL - vivek@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.32">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.38">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1077,10 +1077,10 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="308" parent="283" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="309" parent="283" name="name">
       <DataType>varchar(150)|0s</DataType>
@@ -1102,10 +1102,10 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
     <column id="313" parent="284" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="314" parent="284" name="group_id">
       <DataType>int|0s</DataType>
@@ -1148,10 +1148,10 @@ permission_id</ColNames>
       <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
     </key>
     <column id="322" parent="285" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="323" parent="285" name="name">
       <DataType>varchar(255)|0s</DataType>
@@ -1194,10 +1194,10 @@ codename</ColNames>
       <Predicate>`action_flag` &gt;= 0</Predicate>
     </check>
     <column id="331" parent="286" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="332" parent="286" name="action_time">
       <DataType>datetime(6)|0s</DataType>
@@ -1256,10 +1256,10 @@ codename</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="344" parent="287" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="345" parent="287" name="app_label">
       <DataType>varchar(100)|0s</DataType>
@@ -1288,10 +1288,10 @@ model</ColNames>
       <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
     </key>
     <column id="350" parent="288" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="351" parent="288" name="app">
       <DataType>varchar(255)|0s</DataType>
@@ -1338,10 +1338,10 @@ model</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="360" parent="290" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="361" parent="290" name="created_at">
       <DataType>datetime(6)|0s</DataType>
@@ -1378,10 +1378,10 @@ model</ColNames>
       <UnderlyingIndexName>admin_id</UnderlyingIndexName>
     </key>
     <column id="368" parent="291" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="369" parent="291" name="attendance_date">
       <DataType>date|0s</DataType>
@@ -1432,10 +1432,10 @@ model</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="379" parent="292" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="380" parent="292" name="status">
       <DataType>tinyint(1)|0s</DataType>
@@ -1486,10 +1486,10 @@ model</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="390" parent="293" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="391" parent="293" name="course_name">
       <DataType>varchar(255)|0s</DataType>
@@ -1512,10 +1512,10 @@ model</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="395" parent="294" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="396" parent="294" name="password">
       <DataType>varchar(128)|0s</DataType>
@@ -1586,10 +1586,10 @@ model</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
     <column id="410" parent="295" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="411" parent="295" name="customuser_id">
       <DataType>int|0s</DataType>
@@ -1632,10 +1632,10 @@ group_id</ColNames>
       <UnderlyingIndexName>student_management_app_c_customuser_id_group_id_d872a780_uniq</UnderlyingIndexName>
     </key>
     <column id="419" parent="296" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="420" parent="296" name="customuser_id">
       <DataType>int|0s</DataType>
@@ -1678,10 +1678,10 @@ permission_id</ColNames>
       <UnderlyingIndexName>student_management_app_c_customuser_id_permission_af9a6989_uniq</UnderlyingIndexName>
     </key>
     <column id="428" parent="297" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="429" parent="297" name="feedback">
       <DataType>longtext|0s</DataType>
@@ -1723,10 +1723,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="437" parent="298" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="438" parent="298" name="feedback">
       <DataType>longtext|0s</DataType>
@@ -1768,10 +1768,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="446" parent="299" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="447" parent="299" name="leave_date">
       <DataType>varchar(255)|0s</DataType>
@@ -1818,10 +1818,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="456" parent="300" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="457" parent="300" name="leave_date">
       <DataType>varchar(255)|0s</DataType>
@@ -1868,10 +1868,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="466" parent="301" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="467" parent="301" name="message">
       <DataType>longtext|0s</DataType>
@@ -1908,10 +1908,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="474" parent="302" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="475" parent="302" name="message">
       <DataType>longtext|0s</DataType>
@@ -1948,10 +1948,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="482" parent="303" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="483" parent="303" name="session_start_year">
       <DataType>date|0s</DataType>
@@ -1969,10 +1969,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="486" parent="304" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="487" parent="304" name="address">
       <DataType>longtext|0s</DataType>
@@ -2014,10 +2014,10 @@ permission_id</ColNames>
       <UnderlyingIndexName>admin_id</UnderlyingIndexName>
     </key>
     <column id="495" parent="305" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="496" parent="305" name="subject_exam_marks">
       <DataType>double|0s</DataType>
@@ -2073,10 +2073,10 @@ permission_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="507" parent="306" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="508" parent="306" name="gender">
       <DataType>varchar(50)|0s</DataType>
@@ -2156,10 +2156,10 @@ permission_id</ColNames>
       <UnderlyingIndexName>admin_id</UnderlyingIndexName>
     </key>
     <column id="524" parent="307" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="525" parent="307" name="subject_name">
       <DataType>varchar(255)|0s</DataType>
