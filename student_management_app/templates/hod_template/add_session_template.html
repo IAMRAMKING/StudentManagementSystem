@@ -6,68 +6,72 @@
 
 {% block main_content %}
 
-{% load static %}
+    {% load static %}
 
-<section class="content">
+    <section class="content">
         <div class="container-fluid">
 
             <div class="row">
                 <div class="col-md-12">
                     <!-- general form elements -->
                     <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">Add Session Year</h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <!-- form start -->
-                    <form role="form" method="POST" action="{% url 'add_session_save' %}">
-                        {% csrf_token %}
+                        <div class="card-header">
+                            <h3 class="card-title">Add Session Year</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form role="form" method="POST" action="{% url 'add_session_save' %}">
+                            {% csrf_token %}
 
-                        
-                                {% comment %} Display Messages {% endcomment %}
-                                {% if messages %}
+
+                            {% comment %} Display Messages {% endcomment %}
+                            {% if messages %}
                                 <div class="form-group">
-                                <div class="col-12">
-                                    {% for message in messages %}
-                                    {% if message.tags == "error" %}
-                                        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 10px;">
-                                        {{ message }}
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                    {% elif message.tags == "success" %}
-                                        <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 10px;">
-                                        {{ message }}
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                    {% endif %}
-                                    {% endfor %}
+                                    <div class="col-12">
+                                        {% for message in messages %}
+                                            {% if message.tags == "error" %}
+                                                <div class="alert alert-danger alert-dismissible fade show" role="alert"
+                                                     style="margin-top: 10px;">
+                                                    {{ message }}
+                                                    <button type="button" class="close" data-dismiss="alert"
+                                                            aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            {% elif message.tags == "success" %}
+                                                <div class="alert alert-success alert-dismissible fade show"
+                                                     role="alert" style="margin-top: 10px;">
+                                                    {{ message }}
+                                                    <button type="button" class="close" data-dismiss="alert"
+                                                            aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
                                 </div>
+                            {% endif %}
+
+
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>Session Start Year </label>
+                                    <input type="date" class="form-control" name="session_start_year">
                                 </div>
-                                {% endif %}
-                            
 
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label>Session Start Year </label>
-                                <input type="date" class="form-control" name="session_start_year">
+                                <div class="form-group">
+                                    <label>Session End Year </label>
+                                    <input type="date" class="form-control" name="session_end_year">
+                                </div>
+
                             </div>
+                            <!-- /.card-body -->
 
-                            <div class="form-group">
-                                <label>Session End Year </label>
-                                <input type="date" class="form-control" name="session_end_year">
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Add Session Year</button>
                             </div>
-
-                        </div>
-                        <!-- /.card-body -->
-
-                        <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Add Session Year</button>
-                        </div>
-                    </form>
+                        </form>
                     </div>
                     <!-- /.card -->
 
@@ -75,6 +79,6 @@
             </div>
 
         </div><!-- /.container-fluid -->
-      </section>
+    </section>
 
-  {% endblock main_content %}
+{% endblock main_content %}

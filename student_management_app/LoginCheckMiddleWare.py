@@ -1,16 +1,16 @@
-from django.utils.deprecation import MiddlewareMixin
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.urls import reverse
+from django.utils.deprecation import MiddlewareMixin
 
 
 class LoginCheckMiddleWare(MiddlewareMixin):
-    
+
     def process_view(self, request, view_func, view_args, view_kwargs):
         modulename = view_func.__module__
         # print(modulename)
         user = request.user
 
-        #Check whether the user is logged in or not
+        # Check whether the user is logged in or not
         if user.is_authenticated:
             if user.user_type == "1":
                 if modulename == "student_management_app.HodViews":
@@ -19,7 +19,7 @@ class LoginCheckMiddleWare(MiddlewareMixin):
                     pass
                 else:
                     return redirect("admin_home")
-            
+
             elif user.user_type == "2":
                 if modulename == "student_management_app.StaffViews":
                     pass
@@ -27,7 +27,7 @@ class LoginCheckMiddleWare(MiddlewareMixin):
                     pass
                 else:
                     return redirect("staff_home")
-            
+
             elif user.user_type == "3":
                 if modulename == "student_management_app.StudentViews":
                     pass
